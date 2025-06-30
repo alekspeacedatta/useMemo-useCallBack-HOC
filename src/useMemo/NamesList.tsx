@@ -21,3 +21,8 @@ const NamesList = () => {
     )
 }
 export default NamesList
+
+
+// use am componentma unda miigos handleClick funqcia rogorc useCallBack da gavlena imoqmedos Parent componentis countze Chveni filterNames useMemos funcqiis gadarenderebis da aseve 
+// am chveni child componentis gadarenderebis gareshe aseve Parent componentidan wamosuli handleClick funqciis gadarenderebis da xelaxla sheqmnis gareshe!!! cool idea betweem to components
+// good showcase of useCallBacl

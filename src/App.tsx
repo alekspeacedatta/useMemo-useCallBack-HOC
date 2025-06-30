@@ -1,12 +1,16 @@
 import './App.css'
-import NamesList from './NamesList'
-import ProductList from './ProductList'
+import Parent from './useCallBack/Parent'
+import TaskList from './useCallBack/TODO/TaskList'
+import NamesList from './useMemo/NamesList'
+import ProductList from './useMemo/ProductList'
 function App() {
 
   return (
     <>
-      <NamesList/>
-      <ProductList/>
+      {/* <NamesList/> */}
+      {/* <ProductList/> */}
+      {/* <Parent/> */}
+      <TaskList/>
     </>
   )
 }
