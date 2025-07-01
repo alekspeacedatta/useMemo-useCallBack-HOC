@@ -19,6 +19,9 @@ const HelloWithLogger = WithLogger(Hello);
 const UserWithAuthProtection = WithAuthProtection(User);
 const ShowDateWithDate = WithDate(ShowDate)
 
+const UserListWithLoggerAndLoading = WithAuthProtection(WithLoading(UserList));
+
+
 function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [users, setUsers] = useState<string[]>([]);
@@ -29,7 +32,7 @@ function App() {
       setIsLoading(false);
     }, 2000)
   }, [])
-
+  
   return (
     <>
       {/* <NamesList/> */}
@@ -41,7 +44,8 @@ function App() {
         {/* <UserListWithLoading isLoading={isLoading} users={users}/> */}
         {/* <HelloWithLogger name='alice'/> */}
         {/* <UserWithAuthProtection name='Bob' isLoggedIn={true} /> */}
-        <ShowDateWithDate />
+        {/* <ShowDateWithDate /> */}
+        <UserListWithLoggerAndLoading isLoading={isLoading} users={users} isLoggedIn={true} />
       </div>
     </>
   )
